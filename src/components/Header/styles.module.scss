@@ -15,40 +15,41 @@
   nav {
     margin-left: 5rem;
     height: 5rem;
-  }
+  
 
-  a {
-    display: inline-block;
-    position: relative;
-    padding: 0 0.5rem;
-    height: 5rem;
-    line-height: 5rem;
-    color: var(--gray-300);
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      height: 5rem;
+      line-height: 5rem;
+      color: var(--gray-300);
 
-    transition: color 0.2s;
+      transition: color 0.2s;
 
-    & + a { //toda ancora que não seja a primeira, pra não espaçar a primeira. só apartir da segunda
-      margin-left: 2rem;
-    }
+      & + a { //toda ancora que não seja a primeira, pra não espaçar a primeira. só apartir da segunda
+        margin-left: 2rem;
+      }
 
-    &:hover {
-      color: var(--white);
-    }
+      &:hover {
+        color: var(--white);
+      }
 
-    &.active {
-      color: var(--white);
-      font-weight: bold;
-    }
+      &.active {
+        color: var(--white);
+        font-weight: bold;
+      }
 
-    &.active::after {
-      content: '';
-      height: 3px;
-      border-radius: 3px 3px 0 0;
-      width: 100%;
-      position: absolute;
-      bottom: 1px;
-      left: 0;
-      background: var(--yellow-500);
+      &.active::after {
+        content: '';
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: var(--yellow-500);
+      }
     }
   }
 }

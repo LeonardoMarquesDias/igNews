@@ -12,11 +12,11 @@ type Post = {
   slug: string;
   title: string;
   excerpt: string;
-  updateAt: string;
+  updatedAt: string;
 }
 
 interface PostsProps {
-  posts: Post[]
+  posts: Post[];
 }
 
 export default function Posts({ posts }: PostsProps) {
@@ -29,14 +29,16 @@ export default function Posts({ posts }: PostsProps) {
       <main className={styles.container}>
         <div className={styles.posts}>
           { posts.map(post => (
-            <Link href={post.slug}>
-              <a key={post.slug}>
-              <time>{post.updateAt}</time>
-              <strong>{post.title}</strong>
-              <p>{post.excerpt}</p>
+            <Link key={post.slug} href={`/posts/${post.slug}`}>
+              <a>
+                <time>{post.updatedAt}</time>
+                <strong>{post.title}</strong>
+                <p>
+                  {post.excerpt}
+                </p>
               </a>
             </Link>
-          ))}
+          )) }
         </div>
       </main>
     </>

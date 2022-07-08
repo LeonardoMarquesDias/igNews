@@ -1,7 +1,5 @@
 ## 🚀 About the Project
-The Ig.news is a News Portal with CMS. Integrated payment method integrated with the Strip's API and Database in FaunaDB 
-The application is built with the Serveless model, without external API for data manipulation.
-<br/>
+The Ig.news is a news portal with CMS. Payment method integrated with the Strip's API and Database in FaunaDB.
 For payment method you can use this fake number: ``` 4242 4242 4242 4242 ```
 
 ## 💻 Project Image
